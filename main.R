@@ -1,8 +1,5 @@
 rm(list=ls())
 
-# Extended Euclidean Algorithm
-# Computes d=gcd(u,v) and a,b such that 
-# a*u+b*v=d
 gcd_E = function(u,v){
    
     # Extended Euclidean Algorithm
