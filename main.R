@@ -2,7 +2,7 @@ rm(list=ls())
 
 # Extended Euclidean Algorithm
 # Computes d=gcd(u,v) and a,b such that 
-# au+bv=d
+# a*u+b*v=d
 gcd_E = function(u,v){
     m = matrix(c(1,0,0,1),nrow=2)
     n = 0
