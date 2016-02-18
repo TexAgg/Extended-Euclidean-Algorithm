@@ -3,7 +3,7 @@ rm(list=ls()) # Remove pre-existing objects
 gcd_E = function(u,v){
    
     # Extended Euclidean Algorithm
-    # Computes d=gcd(u,v) and a,b such that 
+    # Computes d=gcd(u,v) and a,b that satisfy 
     # a*u+b*v=d 
     #
     # Args:
@@ -15,7 +15,7 @@ gcd_E = function(u,v){
     n = 0                                               #     |0 1|
     
     while(v != 0){
-        q = floor(u/v)
+        q = floor(u/v) # Get u/v, less the remainder
         m =  m %*% matrix(c(q,1,1,0),nrow=2,byrow=T)    # m = m * |q 1|
         temp = v                                        #         |1 0|
         v = u - q*v # (u,v)=(v,u-q*v)
