@@ -4,6 +4,12 @@ rm(list=ls())
 # Computes d=gcd(u,v) and a,b such that 
 # a*u+b*v=d
 gcd_E = function(u,v){
+   
+    # Args:
+    #   u,v: Two integers, with u>v
+    # Returns:
+    #   A list with a,b,d, such that au+bv=d
+   
     m = matrix(c(1,0,0,1),nrow=2)
     n = 0
     
