@@ -1,4 +1,4 @@
-rm(list=ls())
+rm(list=ls()) # Remove pre-existing objects
 
 gcd_E = function(u,v){
    
