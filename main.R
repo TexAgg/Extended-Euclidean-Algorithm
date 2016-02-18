@@ -11,13 +11,13 @@ gcd_E = function(u,v){
     # Returns:
     #   A list with a,b,d, such that au+bv=d
    
-    m = matrix(c(1,0,0,1),nrow=2)
-    n = 0
+    m = matrix(c(1,0,0,1),nrow=2)               # m = |1 0|
+    n = 0                                       #     |0 1|
     
     while(v != 0){
         q = floor(u/v)
-        m =  m %*% matrix(c(q,1,1,0),nrow=2,byrow=T)
-        temp = v
+        m =  m %*% matrix(c(q,1,1,0),nrow=2,byrow=T)    # m = m * |q 1|
+        temp = v                                        #         |0 1|
         v = u - q*v
         u = temp
         n = n+1
