@@ -17,7 +17,7 @@ gcd_E = function(u,v){
     while(v != 0){
         q = floor(u/v)
         m =  m %*% matrix(c(q,1,1,0),nrow=2,byrow=T)    # m = m * |q 1|
-        temp = v                                        #         |0 1|
+        temp = v                                        #         |1 0|
         v = u - q*v
         u = temp
         n = n+1
