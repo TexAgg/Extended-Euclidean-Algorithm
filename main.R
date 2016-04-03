@@ -1,16 +1,13 @@
-rm(list=ls()) # Remove pre-existing objects
+rm(list=ls()) 
+# Remove pre-existing objects
 
+#' Extended Euclidean Algorithm
+#' Computes d=gcd(u,v) and a,b that satisfy 
+#' a*u+b*v=d 
+#' 
+#' @param u,v: Two integers, with u>v
+#' @return A list with a,b,d, such that au+bv=d
 gcd_E = function(u,v){
-   
-    # Extended Euclidean Algorithm
-    # Computes d=gcd(u,v) and a,b that satisfy 
-    # a*u+b*v=d 
-    #
-    # Args:
-    #   u,v: Two integers, with u>v
-    # Returns:
-    #   A list with a,b,d, such that au+bv=d
-   
     m = matrix(c(1,0,0,1),nrow=2)                       # m = |1 0|
     n = 0                                               #     |0 1|
     
